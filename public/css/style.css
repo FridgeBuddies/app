@@ -1,0 +1,190 @@
+
+
+img.home {
+	height: 40%;
+	width: 40%;
+}
+#right {
+	float: right;
+}
+/* webcamcapture */
+.booth {
+	width:400px;
+	background-color:#ccc;
+	border:10px solid lightsteelblue;
+	margin:0 auto;
+}
+
+/* Fridge CSS below */
+.pic {
+	min-width: 200px;
+	min-height: 300px;
+}
+
+.bar {
+	position: fixed;
+	bottom: 10px;
+	right: 25%;
+	width: 60%;
+}
+
+.home {
+	position: absolute;
+	left: -10px;
+}
+
+.bar2 {
+	position: fixed;
+	bottom: 10px;
+	right: 15%;
+	width: 10%;
+	text-align: center;
+}
+
+.imageResult {
+	max-width: 200px;
+	max-height: 300px;
+}
+
+.item {
+	padding: 25px;
+	background-color: mediumslateblue;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+	font-size: 20px;
+	text-align: justify;
+	width: 90%;
+}
+
+.grid {
+	display: grid;
+	max-width: 90vw;
+	text-align: center;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40% 40% 40%;
+	gap: 30px;
+	margin-top: 50px;
+}
+
+.container {
+	margin-top: 3%;
+}
+
+.icon {
+	padding: 25px;
+	background-color: mediumslateblue;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+	font-size: 30px;
+	text-align: justify;
+	position: relative;
+}
+
+.ri {
+	max-width: 60%;
+	max-height: 70%;
+	min-width : 400px;
+	min-height: 300px;
+	position: relative;
+	left: 22%;
+}
+
+.home-body{
+	background-color:lightblue;
+	margin-top: 30vh;
+}
+
+.fridgeImg {
+	position: absolute;
+	align-self: center;
+	top: 10%;
+	right: 38%;
+	width: 100px;
+	height:100px;
+}
+
+.choice {
+	padding-left: 100px;
+}
+/*Home Page CSS*/
+
+/*Fridge CSS below*/
+
+.pg {
+	background-color: lightblue ;
+}
+
+.pantry {
+	max-width: 12vh;
+	max-height: 150px;
+}
+
+/* Recipe CSS below */
+.dropdown-menu {
+	width: 70%;
+	margin: auto;
+}
+
+.login {
+	background: cornflowerblue !important;
+}
+
+.title {
+	font-size: 8vh;
+	text-align: center;
+	max-width: 40vw;
+	padding: 50px;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+}
+
+.headtitle {
+	font-size: 8vh;
+	vertical-align: top;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+
+}
+.font {
+	padding: 50px;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+	font-size: 8vh;
+	
+}
+
+.form-group {
+	padding: 12px;
+	height: 150%;
+}
+
+.fridge2 {
+	display: inline-block;
+	margin-top: 25px;
+	max-height: 30vh;
+}
+
+.custom-btn {
+	text-transform: uppercase;
+	border-width: 5px;
+	border-color: white;
+	background-color: lightsteelblue;
+	width: 50%;
+	padding: 10px;
+	font-size: 150%;
+	font-weight: 800;
+	left: 25%
+}
+
+
+
+label {
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+	font-size: larger;
+}
+
+.row-fluid {
+	border-width: 10px;
+	border-color: black;
+}

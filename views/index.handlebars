@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	</head>
+	<body class="login">
+        <div class="container text-center">
+          <div class="col-xs-12">
+	<p class="facebookLogin"> <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></p>
+            <img class="fridge2" src="fridge.png" alt="">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>  
+                <div class="text-center">
+                <br>
+               <a href="./home.html" class="btn btn-primary custom-btn home">Login</a> 
+                </div>
+              </form>
+              <br>
+              <br>
+              <br>
+              <br>
+        </div>
+        </div>
+	</body>
+</html>

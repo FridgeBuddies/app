@@ -1,0 +1,96 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<title>Generate Recipes</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+		<script src="recipeAdder.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	</head>
+	<body class="pg">
+		<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
+		<div>
+		
+		<div class="container">
+			<header class="title">My Recipes</header>
+			<button type="button" class="btn btn-primary btn-lg btn-block">Generate a Recipe</button>
+			<button type="button" class="btn btn-block btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Browse Recipes
+				<div class="dropdown-menu block-center text-center">
+					<a class="dropdown-item" href="#">Recipe 1</a>
+					<a class="dropdown-item" href="#">Recipe 2</a>
+					<a class="dropdown-item" href="#">Recipe 3</a>
+					<a class="dropdown-item" href="#">Recipe 4</a>
+				  </div>
+			  </button>
+			  <ul id="recipeBox"></ul>
+		</div>
+
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Concise Handlebars.js</title>
+    <!-- 0a. CSS -->
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <!-- 0a. JS -->
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script><!-- online jquery.js -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script><!-- online handlebars.js-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+ 
+  <body class="pg">
+	<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
+	<div class="container">
+		<header class=" title">My Recipes</header>
+	
+    <!--1. Data (json format!) -->
+    <script>
+    var url='data.json'; // relative url : 'data.json'; protocole-relative absolute url: '//website.org/path/to/data.json';
+    </script>
+ 
+    <!-- 2. Anchor -->
+    <div id="anchor"><b></b></div>
+ 
+    <!-- 3. Template -->
+    <script id="tpl" type="text/template">
+		{{#recipes}}
+		<a href="{{url}}">
+			<div class = "icon"> {{name}} <br> <br>
+					<img class = "rI" src="{{photo}}"></b>
+					<br>
+					<br> {{title}} {{place}} {{introduction}}</div></a>
+			<br><br>
+        {{/recipes}}
+    </script>
+ 
+    <!--4. Handlebars.js slingshot -->
+    <script>
+    //4a.function creation
+    var slingshot = function (url, tplId, anchor) {
+     $.getJSON(url, function(data) {
+              var template = $(tplId).html();
+              var stone = Handlebars.compile(template)(data);
+              $(anchor).append(stone);
+     });
+  }
+    //4b.function firing
+    slingshot('data.json', '#tpl', '#anchor'); // since url = 'data.json' , we can use both notations.
+	</script>
+	</div>
+  </body>
+</html>
