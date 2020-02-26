@@ -9,10 +9,13 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var home = require('./routes/home');
-
+var freezer = require('./routes/freezer');
+var fridge = require('./routes/fridge');
+var recipes = require('./routes/recipes');
+var pantry = require('./routes/pantry');
+var add = require('./routes/add');
 
 var app = express();
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -37,8 +40,12 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/', home.view);
-
+app.get('/home', home.view);
+app.get('/freezer', freezer.view);
+app.get('/fridge', fridge.view);
+app.get('/recipes', recipes.view);
+app.get('/pantry', pantry.view);
+app.get('/add', add.view);
 //app.get('/hello/:userName', hello.view);
 // Example route
 // app.get('/users', user.list);

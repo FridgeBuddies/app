@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html> -->
+	<!-- All functions on this page is courtesy of https://developers.google.com/web/fundamentals/media/capturing-images -->
+<!--	<head>
+		<title>Add Items</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<script>
+			function hasGetUserMedia() {
+				return !!(navigator.mediaDevices &&
+					navigator.mediaDevices.getUserMedia(''))
+			}
+			if (hasGetUserMedia()) {
+				//Good to go
+			} else {
+				alert("getUserMedia() is not supported by your browser");
+			}
+		</script>
+	</head>
+	<body>
+		<video id="player" controls autoplay></video>
+		<video id="player" controls autoplay></video>
+		<br>
+		<button id="capture">Scan</button>
+		<canvas id="canvas" width=320 height=240></canvas>
+		<br><br>
+		<button>Manually Add</button>
+	</body>
+	<script>
+		const player = document.getElementById('player');
+		const canvas = document.getElementById('canvas');
+		const context = canvas.getContext('2d');
+		const captureButton = document.getElementById('capture');
+
+		const constraints = {
+			video: true,
+		};
+
+		captureButton.addEventListener('click', () => {
+    		// Draw the video frame to the canvas.
+    		context.drawImage(player, 0, 0, canvas.width, canvas.height);
+  		});
+
+  		// Attach the video stream to the video element and autoplay.
+  		navigator.mediaDevices.getUserMedia(constraints)
+    		.then((stream) => {
+      			player.srcObject = stream;
+    		});
+	</script>
+	<script>
+		const player = document.getElementById('player');
+
+	  	const constraints = {
+	    	video: true,
+	  	};
+
+	  	navigator.mediaDevices.getUserMedia(constraints)
+	    	.then((stream) => {
+	      		player.srcObject = stream;
+	    	});
+	</script>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF=8">
+		<title>Document</title>
+
+		<link rel="stylesheet" href="css/style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+
+	    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script><!-- online jquery.js -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script><!-- online handlebars.js-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+	</head>
+	<body class = "pg">
+		<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
+		<header class="title">Quick Add</header>
+
+		<div class ="booth">
+			<video id="video" width="400" height="300"></video>
+			<a href="#" id="capture" class="booth-capture-button">Take photo</a>
+			<canvas id = "canvas" width="400" height="300"></canvas>
+		</div>
+
+		<script src="js/photo.js"></script>
+	</body>
+</html>
