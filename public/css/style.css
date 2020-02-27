@@ -91,7 +91,7 @@ img.home {
 
 .home-body{
 	background-color:lightblue;
-	margin-top: 30vh;
+	margin-top: 25vh;
 }
 
 .fridgeImg {
@@ -133,7 +133,7 @@ img.home {
 	font-size: 8vh;
 	text-align: center;
 	max-width: 40vw;
-	padding: 50px;
+	padding: 30px;
 	font-family: 'Paytone One', sans-serif;
 	color: white;
 }
@@ -141,6 +141,7 @@ img.home {
 .headtitle {
 	font-size: 8vh;
 	vertical-align: top;
+	margin-top: 20px;
 	font-family: 'Paytone One', sans-serif;
 	color: white;
 
@@ -176,7 +177,9 @@ img.home {
 	left: 25%
 }
 
-
+.container2 {
+	background-color: lightgoldenrodyellow;
+}
 
 label {
 	font-family: 'Paytone One', sans-serif;
@@ -187,4 +190,25 @@ label {
 .row-fluid {
 	border-width: 10px;
 	border-color: black;
+}
+
+/*For home version B*/
+.containerGrid {  
+		display: grid;  
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+		grid-template-rows: 120px;  
+		text-align: center;
+		grid-column-gap: 10px;
+
+	}
+
+.select {
+	line-height: 110px;
+	font-family: 'Sulphur Point';
+	font-size: larger;
+}
+
+.font2 {
+	font-family: 'Sulphur Point' ;
+	color: rgb(71, 71, 71);
 }
