@@ -11,10 +11,15 @@ var index = require('./routes/index');
 var home = require('./routes/home');
 var homeB = require('./routes/homeB');
 var freezer = require('./routes/freezer');
+var freezerB = require('./routes/freezerB');
 var fridge = require('./routes/fridge');
+var fridgeB = require('./routes/fridgeB');
 var recipes = require('./routes/recipes');
+var recipesB = require('./routes/recipesB');
 var pantry = require('./routes/pantry');
+var pantryB = require('./routes/pantryB');
 var add = require('./routes/add');
+var addB = require('./routes/addB');
 
 var app = express();
 // all environments
@@ -44,10 +49,15 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/homeB', homeB.view);
 app.get('/freezer', freezer.view);
+app.get('/freezerB', freezer.view);
 app.get('/fridge', fridge.view);
+app.get('/fridgeB', fridgeB.view);
 app.get('/recipes', recipes.view);
+app.get('/recipesB', recipesB.view);
 app.get('/pantry', pantry.view);
+app.get('/pantryB', pantryB.view);
 app.get('/add', add.view);
+app.get('/addB', addB.view);
 //app.get('/hello/:userName', hello.view);
 // Example route
 // app.get('/users', user.list);
