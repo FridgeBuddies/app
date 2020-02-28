@@ -10,19 +10,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 		<script src="./js/addItem.js"></script>
 	</head>
-	<body class="pg">
-		<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
-		<div class="container">
-		
-		<header class="title">My Pantry</header>
+	<body class="pg container2">
+		<a href="./homeB" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Home</a>
+		<div class="container font2">
+		<header class="title2 text-center font2">My Pantry</header>
 		<div class="fridge">
-			<label for=""> Upload an image of your pantry!</label>
+			<label class="font2" for=""> Upload an image of your fridge!</label>
 			<div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
                 <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
                 <div class="input-group-append">
-                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                
 				</div>
 			</div>
 			<br>
@@ -31,9 +31,8 @@
 		<ul id="contents"></ul>
 		<div>
 			<input class="bar" type="text" id="itemToAdd">
-			<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>
+		<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>
 		</div>
-		</div>
-	</body> 
-		
+		<div id="bottom"></div>
+	</body>
 </html>

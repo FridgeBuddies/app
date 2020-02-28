@@ -54,43 +54,14 @@
   </head>
  
   <body class="pg">
-	<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
-	<div class="container">
-		<header class=" title">My Recipes</header>
-	
-    <!--1. Data (json format!) -->
-    <script>
-    var url='data.json'; // relative url : 'data.json'; protocole-relative absolute url: '//website.org/path/to/data.json';
-    </script>
- 
-    <!-- 2. Anchor -->
-    <div id="anchor"><b></b></div>
- 
-    <!-- 3. Template -->
-    <script id="tpl" type="text/template">
-		{{#recipes}}
-		<a href="{{url}}">
-			<div class = "icon"> {{name}} <br> <br>
-					<img class = "rI" src="{{photo}}"></b>
-					<br>
-					<br> {{title}} {{place}} {{introduction}}</div></a>
-			<br><br>
-        {{/recipes}}
-    </script>
- 
-    <!--4. Handlebars.js slingshot -->
-    <script>
-    //4a.function creation
-    var slingshot = function (url, tplId, anchor) {
-     $.getJSON(url, function(data) {
-              var template = $(tplId).html();
-              var stone = Handlebars.compile(template)(data);
-              $(anchor).append(stone);
-     });
-  }
-    //4b.function firing
-    slingshot('data.json', '#tpl', '#anchor'); // since url = 'data.json' , we can use both notations.
-	</script>
+	  {{#each friends}}
+	<div>
+		<img class ="friend img-responsive" src={{imageURL}} alt="">
+		<h3><a class = "nameClick" href="#">{{name}}</a></h3>
+		<p>{{description}}</p>
+		<hr>
 	</div>
+	{{/each}}
+
   </body>
 </html>

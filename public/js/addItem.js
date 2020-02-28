@@ -38,7 +38,7 @@ function addItem() {
     var sp = document.createElement("span");
     sp.className += "close";
     sp.appendChild(document.createTextNode('x'));
-    li.className += "item";
+    li.className += "itemB";
     li.setAttribute('id', newItem.value);
 //    for (var i = 0; i < items.length; i++){
 //	li.appendChild(document.createTextNode(items[i].value));

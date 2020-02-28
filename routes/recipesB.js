@@ -3,6 +3,9 @@
  * GET home page.
  */
 
+var data = require('../data.json');
+
 exports.view = function(req, res){
-  res.render('recipesB');
+  console.log(data);
+  res.render('recipesB', data);
 };
