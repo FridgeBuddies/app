@@ -19,7 +19,16 @@
 			//error occurred
 	});
 	document.getElementById('capture').addEventListener('click', function() {
-		context.drawImage(video, 0, 0, 400, 300);
-		photo.setAttribute('src', canvas.toDataURL('image/png'));
+	context.drawImage(video, 0, 0, 400, 300);
+//	var img = new Image;
+//	img.src = strDataURI;
+	
+	const spawn = require('child_process').spawn;
+	const process = spawn('python3', ['./barcode_scanner.py -i'  ]);
+	process.stdout.on('data', (data) => {
+	console.log(data.toString());	
+	});
+	var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+	console.log("3iqwejtioqwejoiweqrjofiehoufeqhuiofwe" + window.location.href);
 	});
 })();
