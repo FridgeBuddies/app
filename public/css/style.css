@@ -160,13 +160,20 @@ img.home {
 }
 
 .headtitle {
-	font-size: 8vh;
-	vertical-align: top;
+	font-size: 6.2vh;
+	
 	margin-top: 20px;
 	font-family: 'Paytone One', sans-serif;
 	color: white;
 
 }
+
+.adder {
+	margin-top: -85px;
+	margin-left: 20px;
+	font-family: 'Paytone One';
+}
+
 .font {
 	padding: 50px;
 	font-family: 'Paytone One', sans-serif;
@@ -239,4 +246,16 @@ label {
 
 .title2 {
 	font-size: 70px;
+}
+
+.arrow {
+	margin: -51.5px;
+	
+}
+
+.click {
+	margin-bottom: -40px;
+	margin-left: 10px;
+	font-family: 'Paytone One';
+	font-size: medium;
 }
