@@ -13,13 +13,13 @@
 		<script src="./js/addItem.js"></script>
 	</head>
 	<body class="pg">
-		<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
+		<a href="/home" class="btn btn-secondary btn-med homebtn active" role="button" aria-pressed="true">Home</a>
 		<div class="container">
-		<header class=" title">My Fridge</header>
-		<div class="fridge">
-			<label for=""> Upload an image of your fridge!</label>
+		<header class="text-center headtitle">My Fridge</header>
+		<div class="text-center font2">
+			<label class = "text-center" for=""> Upload an image of your fridge!</label>
 			<div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0 newFont">
                 <div class="input-group-append">
 				</div>
 			</div>
@@ -29,7 +29,7 @@
 		<ul id="contents"></ul>
 		<div>
 			<input class="bar" type="text" id="itemToAdd">
-		<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>
+		<div class ="bar2 btn-sm btn-secondary newFont" onclick="addItem()">Add </div>
 		</div>
 		<div id="bottom"></div>
 	</body>

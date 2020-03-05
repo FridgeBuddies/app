@@ -13,16 +13,16 @@
 		<script src="./js/addItem.js"></script>
 	</head>
 	<body class="pg">
-		<a href="./home.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</a>
+		<a href="/home" class="btn btn-secondary btn-med homebtn active" role="button" aria-pressed="true">Home</a>
 		<div class="container">
 		
-		<header class="text-center title">My Pantry</header>
-		<div class="fridge">
+		<header class="text-center headtitle">My Pantry</header>
+		<div class="text-center font2">
 			<label for=""> Upload an image of your pantry!</label>
 			<div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0 newFont btn-med">
                 <div class="input-group-append">
-                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+               
 				</div>
 			</div>
 			<br>
@@ -31,7 +31,7 @@
 		<ul id="contents"></ul>
 		<div>
 			<input class="bar" type="text" id="itemToAdd">
-			<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>
+			<div class ="bar2 btn-sm btn-secondary newFont " onclick="addItem()">Add </div>
 		</div>
 		</div>
 	</body> 

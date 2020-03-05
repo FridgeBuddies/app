@@ -49,7 +49,7 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/homeB', homeB.view);
 app.get('/freezer', freezer.view);
-app.get('/freezerB', freezer.view);
+app.get('/freezerB', freezerB.view);
 app.get('/fridge', fridge.view);
 app.get('/fridgeB', fridgeB.view);
 app.get('/recipes', recipes.view);

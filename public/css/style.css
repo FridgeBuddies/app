@@ -51,6 +51,7 @@ img.home {
 	bottom: 10px;
 	right: 15%;
 	width: 10%;
+	padding: 5px;
 	text-align: center;
 }
 
@@ -70,13 +71,13 @@ img.home {
 }
 
 .itemB {
-	padding: 25px;
+	padding: 15px;
 	background-color: rgb(71, 71, 71);
-	font-family: 'Sulphur Point',;
+	font-family: 'Paytone One',;
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: justify;
-	width: 97%;
+	width: 90%;
 }
 
 
@@ -88,6 +89,15 @@ img.home {
 	grid-template-rows: 40% 40% 40%;
 	gap: 30px;
 	margin-top: 50px;
+}
+
+.bubble {
+	text-align: center;
+	margin-left: 30px;
+}
+
+.bubbleImg {
+  filter: ;
 }
 
 .container {
@@ -115,7 +125,7 @@ img.home {
 
 .home-body{
 	background-color:lightblue;
-	margin-top: 25vh;
+	margin-top: 20vh;
 }
 
 .fridgeImg {
@@ -159,6 +169,10 @@ img.home {
 	color: white;
 }
 
+.homebtn {
+	margin: 5px;
+}
+
 .headtitle {
 	font-size: 6.2vh;
 	
@@ -170,7 +184,8 @@ img.home {
 
 .adder {
 	margin-top: -85px;
-	margin-left: 20px;
+	margin-left: 50px;
+	margin-right: 10px;
 	font-family: 'Paytone One';
 }
 
@@ -191,6 +206,10 @@ img.home {
 	display: inline-block;
 	margin-top: 25px;
 	max-height: 30vh;
+}
+
+.fridge {
+	margin-right: 39px;
 }
 
 .custom-btn {
@@ -248,14 +267,9 @@ label {
 	font-size: 70px;
 }
 
-.arrow {
-	margin: -51.5px;
-	
+
+
+.newFont {
+	font-family: 'Paytone One';
 }
 
-.click {
-	margin-bottom: -40px;
-	margin-left: 10px;
-	font-family: 'Paytone One';
-	font-size: medium;
-}
