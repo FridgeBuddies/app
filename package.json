@@ -8,7 +8,6 @@
     "mongodb": "*",
     "mongoose": "*",
     "quagga": "^0.12.1"
-
   },
   "engines": {
     "node": "12.14.1"
