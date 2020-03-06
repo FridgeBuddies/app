@@ -53,11 +53,13 @@ position: absolute;
     <!-- Div to show the scanner -->
     <div id="scanner-container"></div>
     <input type="button" class=" btn btn-primary" id="btn" value="Start/Stop the scanner" />
+		<script src="/js/addItem.js"></script>
 
 <script src="https://cdn.rawgit.com/serratus/quaggaJS/0420d5e0/dist/quagga.min.js"></script>  
 
     <!-- Include the image-diff library -->
     <p id ="information" class = "textBold1" >Barcode not detected.</p>
+		<ul id="contents"></ul>
     <script>
         var _scannerIsRunning = false;
 
@@ -143,8 +145,35 @@ position: absolute;
                 console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
 		var p = document.createElement("p");
 	//	p.innerText = "Successfully added to list";
+		document.getElementById("information").innerHTML = "Successfully scanned.";
+	let map = new Map()
+	map.set("0022000015532", "Five Gum"); 
+	map.set("0071142000500", "ArrowHead Water");
+	console.log(typeof result.codeResult.code);
+	console.log("" + map.get(result.codeResult.code));
+	
+	if (map.has(result.codeResult.code)) {
 		document.getElementById("information").innerHTML = "Successfully scanned and added to list.";
-		//document.body.appendChild(p);
+	var ul = document.getElementById("contents");
+	console.log("" + map.get(result.codeResult.code));
+	var newItem = map.get(result.codeResult.code);
+//    items.push(newItem);
+   // console.log(items[].value);
+    var li = document.createElement("div");
+    var sp = document.createElement("span");
+    sp.className += "close";
+    sp.appendChild(document.createTextNode('x'));
+    li.className += "itemB";
+    li.setAttribute('id', newItem);
+//    for (var i = 0; i < items.length; i++){
+//      li.appendChild(document.createTextNode(items[i].value));
+ //   }
+    li.appendChild(document.createTextNode(newItem));
+    li.appendChild(sp);
+    ul.appendChild(li);
+    var br = document.createElement("br");
+    ul.appendChild(br);
+	}	//document.body.appendChild(p);
             });
 		
         }
@@ -159,6 +188,12 @@ position: absolute;
             }
         }, false);
     </script>
+
+		<div>
+			<input class="bar" type="text" id="itemToAdd">
+		<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>
+		</div>
+		<div id="bottom"></div>
 </body>
 
 </html>
