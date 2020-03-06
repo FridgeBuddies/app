@@ -4,22 +4,19 @@ img.home {
 	height: 40%;
 	width: 40%;
 }
+
+.col {
+	text-align: center;
+}
 #right {
 	float: right;
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
-=======
+
 .textBold {
-	font-weight = bold;
+	font-weight : bold;
 }
->>>>>>> Stashed changes
-=======
-.textBold {
-	font-weight = bold;
-}
->>>>>>> Stashed changes
+
 /* webcamcapture */
 .booth {
 	width:400px;
@@ -55,6 +52,20 @@ img.home {
 	text-align: center;
 }
 
+.rectangle {
+
+	width: 130px;
+	height: 75px;
+	left: 161px;
+	top: 183px;
+
+	background: #FFFFFF;
+	border: 8px solid #54596E;
+	box-sizing: border-box;
+	border-radius: 40px;
+
+}
+
 .imageResult {
 	max-width: 200px;
 	max-height: 300px;
@@ -77,7 +88,7 @@ img.home {
 	color: white;
 	font-size: 18px;
 	text-align: justify;
-	width: 90%;
+	width: 83%;
 }
 
 
@@ -94,11 +105,35 @@ img.home {
 .bubble {
 	text-align: center;
 	margin-left: 30px;
+	vertical-align: middle;
+	line-height: 60px;
 }
 
-.bubbleImg {
-  filter: ;
+.dot {
+	height: 25px;
+	width: 25px;
+	margin-left: 30%;
+	margin-top: 10px;
+	background: #FFFFFF;
+	border: 8px solid #54596E;
+	box-sizing: border-box;
+	border-radius: 40px;
+	border-radius: 50%;
+	display: inline-block;
+  }
+
+.dot2 {
+	height: 20px;
+	width: 20px;
+	margin-left: 40%;
+	background: #FFFFFF;
+	border: 8px solid #54596E;
+	box-sizing: border-box;
+	border-radius: 40px;
+	border-radius: 50%;
+
 }
+
 
 .container {
 	margin-top: 3%;
@@ -125,7 +160,7 @@ img.home {
 
 .home-body{
 	background-color:lightblue;
-	margin-top: 20vh;
+	margin-top: 10vh;
 }
 
 .fridgeImg {
@@ -151,6 +186,29 @@ img.home {
 .pantry {
 	max-width: 12vh;
 	max-height: 150px;
+}
+
+.fridgeBody {
+	margin-left: 5px;
+}
+
+.fridgeList {
+	width: 90%;
+}
+
+.toCenter {
+	text-align: center;
+	margin-left: 10px;
+}
+
+.listAdd {
+	position: relative;
+	bottom: 170vh;
+}
+
+.pantryAdd {
+	position: relative;
+	bottom: 125vh;
 }
 
 /* Recipe CSS below */
@@ -209,7 +267,7 @@ img.home {
 }
 
 .fridge {
-	margin-right: 39px;
+	margin-right: 11vw;
 }
 
 .custom-btn {
