@@ -47,11 +47,11 @@
 			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52WBQLW"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<a href="/home" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Home</a>
-		<div class="container font2">
-		<header class="title2 text-center font2">My Freezer</header>
-		<div class="fridge">
-			<label class="font2" for=""> Upload an image of your freezer!</label>
+		<a href="/home" class="btn btn-secondary btn-lg active homebtn" role="button" aria-pressed="true">Home</a>
+		<div class="container newFont">
+		<header class="text-center headtitle">My Freezer</header>
+		<div class="">
+			<label class="text-center" for=""> Upload an image of your freezer!</label>
 			<div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
                 <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
                 <div class="input-group-append">
@@ -61,7 +61,14 @@
 			<br>
 			<div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 			<br>
-		<ul id="contents"></ul>
+		<div class="toCenter">
+			<img class="fridgeList" src="./images/longFreezer2.png" alt="">
+			<div>
+				<ul class="freezerAdd" id="contents"></ul>
+			</div>
+			
+			</ul>
+		</div>	
 		<div>
 			<input class="bar" type="text" id="itemToAdd">
 		<div class ="bar2 btn-sm btn-secondary" onclick="addItem()">Add </div>

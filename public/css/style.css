@@ -113,7 +113,7 @@ img.home {
 	height: 25px;
 	width: 25px;
 	margin-left: 30%;
-	margin-top: 10px;
+	margin-top: 5px;
 	background: #FFFFFF;
 	border: 8px solid #54596E;
 	box-sizing: border-box;
@@ -126,6 +126,8 @@ img.home {
 	height: 20px;
 	width: 20px;
 	margin-left: 40%;
+	margin-top: -10px;
+	margin-bottom: -10px;
 	background: #FFFFFF;
 	border: 8px solid #54596E;
 	box-sizing: border-box;
@@ -199,6 +201,11 @@ img.home {
 .toCenter {
 	text-align: center;
 	margin-left: 10px;
+}
+
+.freezerAdd {
+	position: relative;
+	bottom: 185vh;
 }
 
 .listAdd {
@@ -319,6 +326,10 @@ label {
 .font2 {
 	font-family: 'Sulphur Point' ;
 	color: rgb(71, 71, 71);
+}
+
+.shift {
+	margin-left: 10px;
 }
 
 .title2 {
