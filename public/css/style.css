@@ -1,5 +1,3 @@
-
-
 img.home {
 	height: 40%;
 	width: 40%;
@@ -136,9 +134,25 @@ img.home {
 
 }
 
-
 .container {
 	margin-top: 3%;
+	padding-right: 15px;
+	padding-left: 15px
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.kitchen {
+	display: flex;
+}
+
+img.freezer {
+	width: 80%;
+	height: auto;
+}
+
+img {
+	vertical-align: middle;
 }
 
 .icon {
@@ -273,10 +287,6 @@ img.home {
 	max-height: 30vh;
 }
 
-.fridge {
-	margin-right: 11vw;
-}
-
 .custom-btn {
 	text-transform: uppercase;
 	border-width: 5px;
@@ -341,4 +351,3 @@ label {
 .newFont {
 	font-family: 'Paytone One';
 }
-
