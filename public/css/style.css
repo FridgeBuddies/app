@@ -147,8 +147,8 @@ img.home {
 }
 
 img.freezer {
-	width: 80%;
-	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 img {
@@ -179,13 +179,13 @@ img {
 	margin-top: 10vh;
 }
 
-.fridgeImg {
+img.fridge {
 	position: absolute;
 	align-self: center;
 	top: 10%;
 	right: 38%;
-	width: 100px;
-	height:100px;
+	max-width: 100%;
+	max-height:100%;
 }
 
 .choice {
@@ -199,9 +199,9 @@ img {
 	background-color: lightblue ;
 }
 
-.pantry {
-	max-width: 12vh;
-	max-height: 150px;
+img.pantry {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .fridgeBody {
