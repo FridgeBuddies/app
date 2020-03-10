@@ -147,8 +147,13 @@ img.home {
 }
 
 img.freezer {
+<<<<<<< HEAD
 	max-width: 100%;
 	max-height: 100%;
+=======
+	width: 80%;
+	height: auto;
+>>>>>>> e538022688aa6bb92ad33ccc5f34c7295db869a0
 }
 
 img {
