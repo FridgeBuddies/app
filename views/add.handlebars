@@ -63,23 +63,16 @@ position: absolute;
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52WBQLW"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <br>
-        <br>
-        <br>
     <!-- Div to show the scanner -->
-    <div class="scanner-container">
-        
-    </div>
+    <div id="scanner-container"></div>
     <input type="button" class=" btn btn-primary" id="btn" value="Start/Stop the scanner" />
-	<script src="/js/addItem.js"></script>
+		<script src="/js/addItem.js"></script>
 
 <script src="https://cdn.rawgit.com/serratus/quaggaJS/0420d5e0/dist/quagga.min.js"></script>  
 
     <!-- Include the image-diff library -->
-    <div class="scanner-container">
-        <p id ="information" class = "textBold1" >Barcode not detected.</p>
-	</div>	
-    <ul id="contents"></ul>
+    <p id ="information" class = "textBold1" >Barcode not detected.</p>
+		<ul id="contents"></ul>
     <script>
         var _scannerIsRunning = false;
 
