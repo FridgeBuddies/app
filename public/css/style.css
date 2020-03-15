@@ -194,6 +194,11 @@ img.fridge {
 }
 /*Home Page CSS*/
 
+.scanner-container {
+	display: flex;
+	justify-content: center;
+}
+
 /*Fridge CSS below*/
 
 .pg {
